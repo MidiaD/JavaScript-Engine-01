@@ -144,6 +144,10 @@ export class Vec {
 		return this.x * v.x + this.y * v.y;
 	}
 
+	cross () {
+		return (this.x * v.y) - (this.y * v.x);
+	}
+
 	draw (ctx, strokeColor) {
 		if (this.color) {
 			strokeColor = this.color;
